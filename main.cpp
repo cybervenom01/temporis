@@ -7,9 +7,9 @@ void DisplayTime(const time_t* tim);
 // The main() function
 int main()
 {
-	std::time_t tim = std::time(0);
-//	struct std::tm* ltim = std::localtime(&tim);
-	DisplayTime(&tim);
+	std::time_t tim = std::asctime(0);
+	std::tm* ltim = std::localtime(&tim);
+	DisplayTime(*ltim);
 
 	return 0;
 }
