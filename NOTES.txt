@@ -1,0 +1,7 @@
+Read the manual ctime(3)
+Read the file ctime
+
+std::time_t
+localtime()
+asctime()
+ctime()
