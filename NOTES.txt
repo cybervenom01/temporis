@@ -5,3 +5,14 @@ std::time_t
 localtime()
 asctime()
 ctime()
+
+Algorithm:
+	Retrieve and display the current time and date.
+
+Debug:
+	Compiling the program results in success. Cannot use mktime() function because it returns a
+'segmentation fault' after running the program. After debugging the program it returns this error:
+	.time/mktime.c: No such file or directory
+
+	You can pretty much search online and lookup any number programs in c++ similar to this one 
+that is being created.	
