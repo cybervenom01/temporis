@@ -16,3 +16,9 @@ Debug:
 
 	You can pretty much search online and lookup any number programs in c++ similar to this one 
 that is being created.	
+
+##NOTE: ctime(), gmtime(), localtime() functions all take an argument of data type tim_t
+	which represents calendar time.
+
+##NOTE: asctime(), mktime() functions both take an argument representing broken-down time,
+	which is a representation separated into year, month, day, and so on.
