@@ -22,3 +22,8 @@ that is being created.
 
 ##NOTE: asctime(), mktime() functions both take an argument representing broken-down time,
 	which is a representation separated into year, month, day, and so on.
+
+##FIXME: While using localtime() function to display the time and date it returns only
+a hexadecimal number.
+
+##FIXME: If I were to use mktime() function it gives a segfault when run.
