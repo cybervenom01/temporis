@@ -10,20 +10,21 @@ Algorithm:
 	Retrieve and display the current time and date.
 
 Debug:
-	Compiling the program results in success. Cannot use mktime() function because it returns a
-'segmentation fault' after running the program. After debugging the program it returns this error:
-	.time/mktime.c: No such file or directory
 
-	You can pretty much search online and lookup any number programs in c++ similar to this one 
-that is being created.	
+##FIXME: Using the mktime() function to get the time. Compiling the program results
+	 in success. But running the program returns a segmentation fault error.
+	 After debugging the program it returns this error message:
 
-##NOTE: ctime(), gmtime(), localtime() functions all take an argument of data type tim_t
-	which represents calendar time.
+		.time/mktime.c: No such file or directory
+
+##NOTE: I search on my computer for the file but find nothing. Searching online I
+	find nothing. But I do find other similar programs made by other programmers.
+
+##NOTE: ctime(), gmtime(), localtime() functions all take an argument of data type
+	time_t which represents calendar time.
 
 ##NOTE: asctime(), mktime() functions both take an argument representing broken-down time,
 	which is a representation separated into year, month, day, and so on.
 
-##FIXME: While using localtime() function to display the time and date it returns only
-a hexadecimal number.
-
-##FIXME: If I were to use mktime() function it gives a segfault when run.
+##FIXME: While using localtime() function to display the time and date it returns
+	 only a hexadecimal number.
